@@ -14,12 +14,12 @@ pipeline {
     }
     stage('Login') {
       steps {
-        sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+        sh 'echo $dockerhub | docker login -u $sujit44 --Sujit@4710'
       }
     }
     stage('Push') {
       steps {
-        sh 'docker push lloydmatereke/jenkins-docker-hub'
+        sh 'docker push sujit44/jenkins-docker-hub'
       }
     }
   }
